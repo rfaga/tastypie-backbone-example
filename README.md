@@ -1,5 +1,10 @@
-tastypie-backbone-example
-=========================
+Construção de APIs com Django-Tastypie
+======================================
+
+Se tiver dúvidas, abra um ticket em **http://github.com/rfaga/tastypie-backbone-example/issues**
+
+Instruções
+==========
 
 (For English, see instructions below)
 
