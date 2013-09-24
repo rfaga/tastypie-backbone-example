@@ -1,0 +1,11 @@
+{
+    "directory": "balance/static/assets",
+    "name": "TastyBone example",
+    "version": "1.0.0",
+    "dependencies": {
+        "bootstrap",
+        "backbone",
+        "backbone-tastypie",
+        "backgrid",
+    },
+}

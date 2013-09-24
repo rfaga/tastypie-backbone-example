@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Starting django project
+virtualenv virtual
+. virtual/bin/activate
+pip install -r doc/requirements.txt
+django-admin startproject tastybone
+cd tastybone
+cp ../virtual/bin/activate .
+chmod +x manage.py
+
+# creating app and related folders
+./manage.py startapp balance
+cd balance
+mkdir static templates
+cd ..
+
+# downloading javascript dependencies
+cp ../doc/.bowerrc .
+bower install bootstrap backbone backbone-tastypie backgrid
+
+
