@@ -1,0 +1,1 @@
+[{"pk": 2, "model": "balance.operation", "fields": {"date": "2013-01-01", "description": "Incoming!", "value": "1000"}}, {"pk": 3, "model": "balance.operation", "fields": {"date": "2013-01-10", "description": "expense 1", "value": "-500"}}, {"pk": 4, "model": "balance.operation", "fields": {"date": "2013-01-15", "description": "expense 2", "value": "-30.55"}}]

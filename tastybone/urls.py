@@ -15,3 +15,16 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 )
+
+
+
+from tastypie.api import Api
+
+from balance.api import OperationResource
+
+v1_api = Api(api_name='api')
+v1_api.register(OperationResource())
+urlpatterns += patterns('',
+    (r'', include(v1_api.urls)),
+)
+
