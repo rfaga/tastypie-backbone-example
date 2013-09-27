@@ -6,3 +6,4 @@ django-debug-toolbar
 Pillow
 sorl-thumbnail
 simplejson
+-e git+https://github.com/rfaga/tastypie-client#egg=tastypie_client

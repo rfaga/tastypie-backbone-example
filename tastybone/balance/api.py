@@ -1,7 +1,8 @@
 # coding: UTF-8
 
 from tastypie.resources import ModelResource
-from tastypie.authentication import Authentication
+from tastypie.authentication import Authentication, BasicAuthentication
+from tastypie.authorization import Authorization
 
 from models import *
 
@@ -21,4 +22,5 @@ class OperationResource(ModelResource):
         detail_allowed_methods = ['get', 'post', 'put', 'delete']
         resource_name = 'operation'
         queryset = Operation.objects.all()
-        authentication = DjangoAuthentication()
+        authentication = BasicAuthentication()
+        authorization = Authorization()
