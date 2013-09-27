@@ -22,5 +22,5 @@ class OperationResource(ModelResource):
         detail_allowed_methods = ['get', 'post', 'put', 'delete']
         resource_name = 'operation'
         queryset = Operation.objects.all()
-        authentication = BasicAuthentication()
+        authentication = DjangoAuthentication()
         authorization = Authorization()

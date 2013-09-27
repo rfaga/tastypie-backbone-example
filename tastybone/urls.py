@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'tastybone.views.home', name='home'),
+    url(r'^$', 'balance.views.index', name='home'),
     # url(r'^tastybone/', include('tastybone.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
